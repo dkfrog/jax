@@ -43,6 +43,8 @@ public class ResponseAdvice implements ResponseBodyAdvice<Object> {
             if (jsonStr.contains(JSON_SIGN)) {
                 ResultDTO success = ResultDTO.success(JsonUtils.stringToBean(jsonStr, Map.class));
                 return JsonUtils.beanToString(success);
+            }else {
+                return JsonUtils.beanToString(ResultDTO.success(jsonStr));
             }
         } else if (o instanceof ResultDTO) {
             return o;
