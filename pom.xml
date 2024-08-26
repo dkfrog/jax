@@ -33,7 +33,7 @@
         <jax-common.version>0.0.1-SNAPSHOT</jax-common.version>
         <jax-security.version>0.0.1-SNAPSHOT</jax-security.version>
 
-        <swagger2.version>2.9.2</swagger2.version>
+        <swagger2.version>2.10.0</swagger2.version>
     </properties>
 
     <dependencies>
